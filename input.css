@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+ 
+body::-webkit-scrollbar{
+    display: none;
+}
+ 
+.links li a{
+    @apply transition duration-500 ease-in-out;
+}
+.skill{
+    @apply border-1 border-solid border-[#4fff03] sm:w-[20%] sm:h-[100%] w-[100%] h-auto sm:pl-5 p-3 sm:rounded-[1rem] rounded-[0.5rem] font-semibold text-[0.9em] cursor-pointer sm:hover:scale-105 transition ease-in-out duration-500;
+}
+.skill ul{
+    @apply flex flex-wrap justify-items-start items-center gap-2 ;
+}
+.skill ul li{
+    @apply border-1 border-solid border-[#4fff03] p-1 rounded-[0.5em];
+}
+.proj{
+    @apply transition duration-500 ease-in-out sm:w-[20%] w-[100%] max-w-sm  border-1 border-solid border-[#646060]   rounded-lg shadow-sm  ;
+}
+.proj:hover{
+    @apply scale-102;
+}
+.proj img{
+    @apply sm:h-[50%] sm:w-full;
+}
+/* ----- */
+.tech span{
+    @apply bg-transparent border-1 border-solid sm:text-[0.7em] border-[#4fff03] p-0.5 rounded-[0.2em] ;
+}
+/* === animation === */
+.photo{
+      animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+  0%{
+    transform:translate(0,200px);
+    opacity:0;
+  } 
+  100% {
+    transform:translate(0px);
+    opacity: 1;
+   }
+}
